@@ -1,8 +1,10 @@
 文件修改说明：
+
 1、aop下AopClient.php文件追加写文件操作（426行）已屏蔽
 2、pagepay下pagepay.php文件屏蔽输出表单功能（43行）
 
 文件使用说明：
+
 1、请先配置好根目录下的config.php，需要填写一下参数app_id、merchant_private_key、notify_url、return_url、alipay_public_key
 2、相关参数获取请参考该地址：http://www.itinfor.cn/archives/1336
 3、使用请注意sign_type是RSA还是RSA2，根据签名类型，需配置对应的公私钥
