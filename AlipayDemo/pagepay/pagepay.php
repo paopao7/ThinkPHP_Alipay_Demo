@@ -40,7 +40,7 @@ require_once dirname(__FILE__).'/buildermodel/AlipayTradePagePayContentBuilder.p
 	$response = $aop->pagePay($payRequestBuilder,$config['return_url'],$config['notify_url']);
 
 	//输出表单
-	var_dump($response);
+	// var_dump($response);
 ?>
 </body>
 </html>

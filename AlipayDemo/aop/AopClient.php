@@ -423,7 +423,9 @@ class AopClient {
         $sHtml = $sHtml."<input type='submit' value='ok' style='display:none;''></form>";
 		
 		$sHtml = $sHtml."<script>document.forms['alipaysubmit'].submit();</script>";
-		
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+fwrite($myfile,$sHtml.date('Y-m-d H:i:s',time()));
+fclose($myfile);		
 		return $sHtml;
 	}
 
