@@ -1,0 +1,14 @@
+*,html{
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.pay_box{
+	width: 60%;
+	height: 600px;
+	margin-top: 60px;
+	border-radius: 3px;
+	background-color: #efefef;
+}
