@@ -105,6 +105,14 @@ body{
 	border-radius: 2px;
 }
 
+.pay_tips{
+	color: #018ffd;
+	position: absolute;
+	top: 230px;
+	left: 45px;
+	font-size: 12px;
+}
+
 .pay_record_item{
 	color: #9a9a9a;
 	position: absolute;
@@ -139,6 +147,7 @@ body{
 	border-right: none;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
+background: none; 
 }
 
 /*记录页面*/
