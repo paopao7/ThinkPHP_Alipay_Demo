@@ -60,7 +60,7 @@ class IndexController extends Controller {
         $data = $_POST;//支付宝回传的数据为json格式，再获取其中的数据的时候，无需解析该json数据然后获取，可直接通过$_POST['参数名']获取到。告诉你一个小秘密，如果你使用json解析之后的数据的话，是无效的，别问我为什么知道 ﾍ(;´Д｀ﾍ)ﾍ(;´Д｀ﾍ)
 
         //此处和第44行一样
-        Vendor('get_pay_data','Core/Library/Org/Trade/','.class.php');
+        Vendor('get_pay_data','ThinkPHP/Library/Org/Alipay/','.class.php');
 
         //该方法为我进行的二次封装，实际还是调用支付宝官方demo的验签功能
         $result = Alipay::check_sign($data);
