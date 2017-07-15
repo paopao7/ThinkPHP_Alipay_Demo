@@ -1,14 +1,227 @@
-*,html{
-	height: 100%;
-	width: 100%;
+body{
+	text-align: center;
+	font-family: 微软雅黑;
+}
+
+.pay_backgound_box{
+	width: 800px;
+	height: 640px;
 	margin: 0px auto;
-	padding: 0px auto;
+	margin-top: 50px;
+	position: relative;
+	background-color: #efefef;
+    background-image: url('../images/background_image.jpg');
 }
 
 .pay_box{
-	width: 60%;
-	height: 600px;
-	margin-top: 60px;
-	border-radius: 3px;
-	background-color: #efefef;
+	width: 600px;
+	height: 425px;
+	position: absolute;
+	top: 20%;
+	left: 12.5%;
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+
+.pay_header_box{
+	width: 600px;
+	height: 136px;
+	position: relative;
+	background-color: #018ffd;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.pay_header_left_text{
+	font-size: 20px;
+	color: #ffffff;
+	position: absolute;
+	top: 40px;
+	left: 45px;
+	text-align: left;
+}
+
+.pay_header_right_text{
+	font-size: 32px;
+	color: #ffffff;
+	position: absolute;
+	top: 45px;
+	right: 30px;	
+}
+
+.pay_body_box{
+	font-size: 14px;
+	position: relative;
+	margin-top: 15px;
+}
+
+.pay_username_item{
+	color: #9a9a9a;
+	position: absolute;
+	top: 30px;
+	left: 45px;
+}
+
+.pay_username{
+	color: #333333;
+	position: absolute;
+	top: 75px;
+	left: 45px;
+}
+
+.pay_money_item{
+	color: #9a9a9a;
+	position: absolute;
+	top: 30px;
+	right: 45px;
+}
+
+.pay_money{
+	color: #018ffd;
+	font-size: 26px;
+	position: absolute;
+	top: 75px;
+	right: 45px;
+}
+
+.pay_recharge_item{
+	color: #9a9a9a;
+	position: absolute;
+	top: 135px;
+	left: 45px;
+}
+
+.pay_recharge_input{
+	color: #333333;
+	font-size: 16px;
+	padding-left: 15px;
+	position: absolute;
+	top: 185px;
+	left: 45px;
+	width: 180px;
+	height: 30px;
+	border: solid 1px #b4b3b3;
+	outline:none;
+	border-radius: 2px;
+}
+
+.pay_record_item{
+	color: #9a9a9a;
+	position: absolute;
+	top: 135px;
+	right: 45px;
+}
+
+.pay_record{
+	position: absolute;
+	top: 182px;
+	right: 45px;
+	color: #333333;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.pay_record a{
+	color: #333333;
+	text-decoration: none;
+}
+
+.pay_action{
+	color: #ffffff;
+	position: absolute;
+	top: 570px;
+	right: 0px;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	cursor:pointer;
+	border: solid 1px #ffffff; 
+	border-right: none;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+/*记录页面*/
+.tontinue_pay{
+	text-align: left;
+	color: #018ffd;
+	text-align: left;
+	padding: 4px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: inline-block;
+	border: solid 1px #018ffd;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+
+.tontinue_pay:hover{
+	color: #018ffd;
+	text-decoration: none;
+}
+
+.gov_re_log_bal_box{
+    width: 70%;
+    font-size: 14px;
+    margin: 40px auto 0px;
+    text-align: left;
+}
+
+.gov_re_log_balance{
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: -6px;
+    text-align: left;
+}
+
+.gov_re_log_box{
+    width: 70%;
+    margin: 20px auto 0px;
+}
+
+.gov_re_log_head{
+    width: 100%;
+    text-align: left;
+    height: 35px;
+    color: #ffffff;
+    line-height: 35px;
+    margin-left: 0px!important;
+    background-color: #018ffd;
+}
+
+.gov_re_log_list{
+    color: #333333;
+    text-align: center;
+    margin-left: 0px!important;
+    width: 100%;
+    background-color: #efeeee;
+    border-bottom: solid 1px #ffffff;
+}
+
+
+.col-sm-3{
+    width: 20%!important;
+}
+
+.gov_re_log_item{
+    border-right: solid 1px #ffffff;
+}
+
+.gov_re_log_node{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    border-right: solid 1px #ffffff;
+}
+
+.gov_re_log_head:last-child{
+    border-right: none;
+}
+
+.left_text_align{
+    text-align: left;
 }
