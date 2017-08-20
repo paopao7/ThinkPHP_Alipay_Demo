@@ -1,6 +1,6 @@
 # **ThinkPHP集成支付宝demo_采用自定义类形式**
 
-![](http://www.itinfor.cn/wp-content/uploads/2017/08/pay_ui-768x616.png)
+![](http://www.itinfor.cn/wp-content/uploads/2017/08/pay_ui.png)
 
 ## 目录介绍
 * AlipayClass：为ThinkPHP3.2.3版本集成支付宝及时到账官方demo的demo
