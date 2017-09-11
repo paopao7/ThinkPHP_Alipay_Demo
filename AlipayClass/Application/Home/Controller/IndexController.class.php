@@ -57,7 +57,7 @@ class IndexController extends Controller {
 
     //该方法为接受支付宝回传参数以及修改对应订单状态的方法
     public function get_post(){    
-        $data = $_POST;//支付宝回传的数据为json格式，再获取其中的数据的时候，无需解析该json数据然后获取，可直接通过$_POST['参数名']获取到。告诉你一个小秘密，如果你使用json解析之后的数据的话，是无效的，别问我为什么知道 ﾍ(;´Д｀ﾍ)ﾍ(;´Д｀ﾍ)
+        $data = $_POST;//支付宝回传的数据为数组格式，再获取其中的数据的时候，可直接通过$_POST['参数名']获取到。告诉你一个小秘密，如果你使用json解析之后的数据的话，是无效的，别问我为什么知道 ﾍ(;´Д｀ﾍ)ﾍ(;´Д｀ﾍ)
 
         //此处和第44行一样
         Vendor('get_pay_data','ThinkPHP/Library/Org/Alipay/','.class.php');
