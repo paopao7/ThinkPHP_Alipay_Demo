@@ -11,7 +11,7 @@
  Target Server Version : 50635
  File Encoding         : utf-8
 
- Date: 09/14/2017 00:41:32 AM
+ Date: 09/14/2017 00:45:56 AM
 */
 
 SET NAMES utf8;
@@ -39,7 +39,7 @@ CREATE TABLE `pay_config` (
 --  Records of `pay_config`
 -- ----------------------------
 BEGIN;
-INSERT INTO `pay_config` VALUES ('1', '2016042901349061', 'MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAMPnJ7JIdM5RQk711UDpVZ7dJEyOC0hetzjaHn4+L3sfuV5X6+dhvaHfuCysvqDElEBgk4IlCfw+f1tt24A6OIxpR3vUkk5IQDyZvLyrt0OpFBq12b9qQnx8ME9tMOzMorBLugJPL3kHy2DoNiujNK4EUNsjMaCdMbpFglg3FePrAgMBAAECgYEAjKywB8kZ/5HAcNz9HtivgB3C1CpoFbbWEUAoB3V2OQ7l2MaAAy5fsx7orUP6u42N+9Cd/CXGzti+MZRou+KS+ZXXOQhU4ZMs0yWgJpnRfUpcBjWUaVDnHoDPLdbi+coFwxLpZwuZH2VzUjyGC4UZq6kjoY5urwCo95Lh7kM2b4kCQQD3wEMZWueRID/0rN5XVQF1q1+/i9jyHNhJU3Fuo9lWFggS3SNYLHoFw6fEeuaYSbiEsOseCOqr5AuxasSQJOXHAkEAymz1jYdHbPOpfYY244649lR0CnSHSzT36U7nC7SUzG3fgKuZEzMWxsmTZkITylYJShRo4VCyKPwgwnaUyGXAvQJBAK3dVzlr+iZ2o2tqBX70QNn7Mm6SDeWbKI4M6QXkJpmrTG8wkaVHUTrKW+oe9cTZt4wnPFkPmOCYYTxY2SjvO/ECQAze5rIMAu+bgpBXo0/OuFX5QrOTezK9+HFeMfSdk8R3y/k7b+03l2AmWvfqhaWc2NRb/dstrVZLya1zqrwfNCUCQQDHJE0ob2dbCYMNA6jblCO1dIQywlMfq7CsWmJ2+0zMXBvJxIMEKzBiuBCjV3iAG44TVBwqc8pzvH+iBAbLYV5m', 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB', 'http://alipayclass.cn/index.php/Home/Index/get_post.html', 'http://外网可访问网关地址/alipay.trade.page.pay-PHP-UTF-8/return_url.php', 'UTF-8', 'RSA', 'https://openapi.alipay.com/gateway.do', '1505319892');
+INSERT INTO `pay_config` VALUES ('1', '', '', '', '', '', 'UTF-8', 'RSA', 'https://openapi.alipay.com/gateway.do', '0');
 COMMIT;
 
 -- ----------------------------
