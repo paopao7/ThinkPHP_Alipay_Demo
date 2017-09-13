@@ -102,7 +102,38 @@ class IndexController extends Controller {
 
     //该方法为接受支付宝回传参数以及修改对应订单状态的方法
     public function get_post(){    
-        $data = $_POST;//支付宝回传的数据为数组格式，再获取其中的数据的时候，可直接通过$_POST['参数名']获取到。告诉你一个小秘密，如果你使用json解析之后的数据的话，是无效的，别问我为什么知道 ﾍ(;´Д｀ﾍ)ﾍ(;´Д｀ﾍ)
+        /*
+            支付宝回传的数据为数组格式，再获取其中的数据的时候，可直接通过$_POST['参数名']获取到。
+            告诉你一个小秘密，如果你使用json解析之后的数据的话，是无效的，别问我为什么知道 ﾍ(;´Д｀ﾍ)ﾍ(;´Д｀ﾍ)
+        */
+        $data = $_POST;
+
+        /*
+            此处可将支付宝回调的参数，转换为json格式，写入数据库。
+            下次直接拿出来使用即可，记得转换为数组格式哦
+            以下为写数据库操作
+        */
+
+        /*
+
+            //先假设返回数据为 $data = array("aa"=>"bb","cc"=>"dd");
+            $model_log = D('Log');
+
+            $new_data_log['pay_data'] = json_encode($data);
+            $new_data_log['create_time'] = date('Y-m-d H:i:s',time());
+
+            $model_log->data($new_data_log)->add();
+        */
+
+        /*
+            写入成功，此时去拷贝写入的数据 pay_data
+            转换为数组进行使用
+        */
+         
+         /*
+             //该数据为数据库取出的假设数据 $pay_data = '{"aa":"bb","cc":"dd"}';
+             $data = json_decode($pay_data,true);   
+         */
 
         //此处和第44行一样
         Vendor('get_pay_data','ThinkPHP/Library/Org/Alipay/','.class.php');
