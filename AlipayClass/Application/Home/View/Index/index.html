@@ -24,12 +24,13 @@
 					<span class="pay_money_item">账户余额</span>
 					<span class="pay_money">￥ {$user.money}</span>
 					<span class="pay_recharge_item">充值金额</span>
-					<input type="input" name="money" class="pay_recharge_input" />
+					<input type="input" name="money" class="pay_recharge_input" value="0.01" />
 					<span class="pay_tips">tips：充值金额为精确到小数点后两位的正整数</span>
 					<span class="pay_record_item">充值记录</span>
 					<span class="pay_record"><a href="{:U('record')}">点我</a></span>
 				</div>
 			</div>
+			<div class="config_action"><a href="{:U('Home/Index/config')}">点此配置</a></div>
 			<input class="pay_action" type="submit" value="走你┏ (゜ω゜)=☞"/>
 		</form>
 	</div>

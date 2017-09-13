@@ -1,8 +1,12 @@
+*{
+	margin: 0px auto;
+	padding: 0px auto;
+}	
+
 body{
 	text-align: center;
 	font-family: 微软雅黑;
 }
-
 .pay_backgound_box{
 	width: 800px;
 	height: 640px;
@@ -134,6 +138,19 @@ body{
 	text-decoration: none;
 }
 
+.config_action{
+	color: #ffffff;
+	font-size: 14px;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+}
+
+.config_action a{
+	color: #ffffff;
+}
+
 .pay_action{
 	color: #ffffff;
 	position: absolute;
@@ -233,4 +250,80 @@ background: none;
 
 .left_text_align{
     text-align: left;
+}
+
+/*配置页面*/
+.content{
+	width: 1120px;
+	height: 100%;
+	margin-top: 20px;
+	background-color: #dbdbdb;
+}
+
+.title{
+	color: #333333;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	padding-top: 30px;
+}
+
+.list_item_con{
+	margin-top: 30px;
+}
+
+.list_item{
+	margin-top: 40px;
+}
+
+.item_key{
+	color: #333333;
+	display: inline-block;
+	margin-left: 0px;
+	vertical-align: top;
+	width: 150px;
+	text-align: left;
+}
+
+.item_jsonstr{
+	width: 80%;
+	height: 45px;
+	resize:none;
+	padding-top: 5px;
+	padding-left: 5px;
+	outline: none;
+}
+
+.item_result{
+	width: 80%;
+	height: 110px;
+	resize:none;
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.item_value{
+	border: solid 1px #a9a9a9;
+	height: 30px;
+	width: 80%;
+	padding-left: 5px;
+	outline: none;
+}
+
+.submit_btn_item{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.submit_btn{
+	width: 120px;
+	height: 40px;
+	color: #ffffff;
+	border: solid 1px #018ffd;
+	background-color: #018ffd;
+	text-align: center;
+	cursor:pointer;
+	-webkit-appearance : none ;
 }

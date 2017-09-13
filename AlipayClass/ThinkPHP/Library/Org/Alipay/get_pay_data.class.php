@@ -1,8 +1,29 @@
 <?php
 namespace Org;
 class Alipay{
+    //从数据库中读取配置信息
+    private function get_alipay_config(){
+        $model = D('Config');
+        $where['id'] = array('eq',1);
+        $config = $model->where($where)->find();
+
+        /*
+            此处的修改是因为数据库存的的gatewayUrl，但读出来的却是gatewayurl。
+            也懒得去找解决办法了，直接强制转换过来
+        */
+        $config['gatewayUrl'] = $config['gatewayurl'];
+        unset($config['gatewayurl']);
+
+        return $config;
+    }
+
     public function go_pay($total_fee,$out_trade_no){
-        require_once dirname(__FILE__).'/config.php';
+        //调用从数据库获取配置信息的方法
+        $Object = new Alipay();
+        $config = $Object->get_alipay_config();
+
+        //屏蔽从本地文件读取配置信息的方法
+        // require_once dirname(__FILE__).'/config.php';
         require_once dirname(__FILE__).'/pagepay/service/AlipayTradeService.php';
         require_once dirname(__FILE__).'/pagepay/buildermodel/AlipayTradePagePayContentBuilder.php';
 
@@ -41,7 +62,12 @@ class Alipay{
 
     //对回调的数据进行校验
     public function check_sign($data){
-        require_once dirname(__FILE__).'/config.php';
+        //调用从数据库获取配置信息的方法
+        $Object = new Alipay();
+        $config = $Object->get_alipay_config();
+
+        //屏蔽从本地文件读取配置信息的方法
+        // require_once dirname(__FILE__).'/config.php';
         require_once dirname(__FILE__).'/pagepay/service/AlipayTradeService.php';
         require_once dirname(__FILE__).'/pagepay/buildermodel/AlipayTradePagePayContentBuilder.php';
 

@@ -19,7 +19,7 @@ $config = array (
 		'charset' => "UTF-8",
 
 		//签名方式
-		'sign_type'=>"RSA2",
+		'sign_type'=>"RSA",
 
 		//支付宝网关
 		'gatewayUrl' => "https://openapi.alipay.com/gateway.do",

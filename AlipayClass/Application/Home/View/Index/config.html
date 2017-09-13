@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>支付宝配置页面</title>
+	<link href="/Public/sources/css/common.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/Public/sources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/Public/sources/js/common.js"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="title">支付宝配置页面</div>
+		<div class="list_item_con">
+			<form action="{:U('Home/Index/save_config')}" method="post">
+				<input type="hidden" name="id" value="1" />
+				<div class="list_item">
+					<label class="item_key">app_id:</label>
+					<input type="text" class="item_value" name="app_id" placeholder="应用ID,您的APPID" value="{$result.app_id}" />
+				</div>
+				<div class="list_item">
+					<label class="item_key">签名方式:</label>
+					<select class="item_value item_select" name="sign_type">
+						<option value="RSA" <eq name="result.sign_type" value="RSA">selected</eq>>RSA</option>
+						<option value="RSA2" <eq name="result.sign_type" value="RSA2">selected</eq>>RSA2</option>
+					</select>
+				</div>
+				<div class="list_item">
+					<label class="item_key">异步通知地址:</label>
+					<input type="text" class="item_value" name="notify_url" placeholder="异步通知地址" value="{$result.notify_url}" />
+				</div>
+				<div class="list_item">
+					<label class="item_key">同步跳转地址:</label>
+					<input type="text" class="item_value" name="return_url" placeholder="同步跳转地址" value="{$result.return_url}" />
+				</div>
+				<div class="list_item">
+					<label class="item_key">公钥:</label>
+					<textarea class="item_jsonstr" name="alipay_public_key">{$result.alipay_public_key}</textarea>
+				</div>
+				<div class="list_item">
+					<label class="item_key float_left">私钥:</label>
+					<textarea class="item_result float_left" name="merchant_private_key">{$result.merchant_private_key}</textarea>
+				</div>
+				<div class="submit_btn_item">
+					<input type="button" class="submit_btn" id="submit_btn" value="提  交" onclick="submit()" />
+				</div>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>

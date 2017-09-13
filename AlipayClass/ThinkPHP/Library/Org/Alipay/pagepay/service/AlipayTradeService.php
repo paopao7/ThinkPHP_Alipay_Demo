@@ -35,6 +35,7 @@ class AlipayTradeService {
 	public $signtype = "RSA2";
 
 	function __construct($alipay_config){
+// dump($alipay_config);exit;		
 		$this->gateway_url = $alipay_config['gatewayUrl'];
 		$this->appid = $alipay_config['app_id'];
 		$this->private_key = $alipay_config['merchant_private_key'];
